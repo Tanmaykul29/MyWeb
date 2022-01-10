@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tanmay Kulkarni</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="/"></a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('home')}}" style="color: #C5c8cb">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link"  href="{{url_for('about')}}" style="color: #C5c8cb">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  href="{{url_for('courses')}}" style="color: #C5c8cb">Courses</a>
+      </li>
+    </ul>
+
+
+  </div>
+</nav>
+       {% block content %}
+       {% endblock %}
+</body>
+<footer>
+    <div class="container-fluid" style="position:absolute;top:700px">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                <a href="https://github.com/Tanmaykul29"><img src="static/images/github.png" style="border-radius: 50%; width=40px; height:40px;" align="right"></a>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <a href="https://www.linkedin.com/in/tanmay-kulkarni-2b5793146/"><img src="static/images/linkedin.png" style="border-radius: 50%; width=40px; height:40px;" align="left"></a>
+            </div>
+        </div>
+        <p class="copyright text-muted" style="text-align:center">Copyright @ TanmayKulkarni {{current_year}}</p>
+    </div>
+</footer>
+
+</html>
